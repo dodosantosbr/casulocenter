@@ -147,7 +147,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/src/img/fundobg1.png");
+  background-image: url("src/img/fundobg1.png");
   background-position: center;
   background-size: cover;
   color: #fff;
