@@ -147,7 +147,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/fundobg1.png");
+  background-image: url("/src/img/fundobg1.png");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -511,30 +511,97 @@ body {
 }
 
 .footer {
-  background-color: #f0ebe7;
-  color: #86989c;
-  padding: 2.5rem 1.5rem;
-}
-
-.footer-logo {
-  width: 98px;
-  height: auto;
-  object-fit: contain;
+  background-color: var(--cinza-medio);
+  color: #eee;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-content {
-  max-width: 80rem;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
   justify-content: space-between;
+}
+
+.footer-logo-box {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   align-items: flex-start;
 }
 
-.footer-contact i {
-  color: #555;
-  margin-right: 0.5rem;
+.footer-logo {
+  max-width: 140px;
+  height: auto;
+}
+
+.footer-title {
+  color: var(--laranja-claro);
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social-icons a {
+  color: var(--verde-escuro);
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  color: #4caf50;
+}
+
+.footer-section {
+  flex: 1 1 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-heading {
+  color: var(--laranja-claro);
+  margin: 0 0 10px 0;
+  font-weight: 600;
   font-size: 1.1rem;
-  vertical-align: middle;
+}
+
+.footer-links {
+  list-style: none; /* Remove as bolinhas */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: var(--verde-escuro);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--verde-escuro);
+}
+
+.footer-contact {
+  color: var(--verde-escuro);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.footer-contact i {
+  color: #25d366;
+  font-size: 1.3rem;
 }
