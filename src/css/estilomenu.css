@@ -1,0 +1,1222 @@
+:root {
+  --fundo-muito-claro: #f9f9f9;
+  --verde-escuro: #3e6e2d;
+  --laranja-claro: #d75516;
+  --marrom-escuro: #793b2f;
+}
+
+body {
+background: 
+  linear-gradient(0deg, rgba(62, 110, 45, 0.9), rgba(249, 249, 249, 0.8)),
+  url("../img/fndobg.png") no-repeat center center fixed;
+background-size: cover, cover;
+
+}
+
+header {
+  background-color: var(--verde-escuro);
+  padding: 15px 20px;
+  text-align: left;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.menu-box {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.menu-box i {
+  font-size: 2rem;
+  color: var(--laranja-claro);
+  margin-bottom: 10px;
+}
+
+.menu-box span {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--marrom-escuro);
+}
+
+.btn-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--fundo-muito-claro);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 12px;
+  border: 2px solid var(--verde-escuro);
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-voltar:hover,
+.btn-voltar:focus {
+  background-color: #d75516;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-voltar i {
+  font-size: 18px;
+}
+
+.btn-fechar-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  font-weight: bold;
+  color: #f5f5f5;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  z-index: 10; /* <- adicionado */
+}
+
+.btn-fechar-menu:hover {
+  color: #d75516;
+}
+
+/* .btn-wpp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 64px;
+  height: 64px;
+  background-color: var(--verde-wpp);
+  border-radius: 50%;
+  box-shadow: 0 8px 15px #25d36666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+} */
+
+#banhoDeErvas {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoRosas {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoKids {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoGold {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoAveia {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoChoc {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoChoco {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoRelax {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoAnti {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoRevi {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoMaca {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoMara {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoLeite {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoVinho {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoBeterraba {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#sauna {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoSpa {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoDetox {
+  position: absolute; /* para posicionar em relação ao container */
+  top: 30%; /* aparece logo abaixo do container */
+  left: 50%; /* centraliza horizontalmente em relação ao container */
+  transform: translateX(-50%);
+  background: #3e6e2d;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+}
+
+#banhoDeErvas h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoKids h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoAveia h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoGold h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoChoc h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoChoco h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoVinho h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoRosas h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoRelax h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoAnti h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoDetox h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoLeite h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoBeterraba h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoMaca h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#sauna h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoMara h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoSpa h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoRevi h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#banhoDeErvas ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoKids ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoRelax ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoGold ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoAveia ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoChoc ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoChoco ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoRosas ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoMaca ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoMara ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoAnti ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoLeite ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoSpa ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoBeterraba ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoDetox ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sauna ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoVinho ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoRevi ul {
+  list-style: none;
+  padding: 0;
+}
+
+#banhoDeErvas ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoKids ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoRelax ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoGold ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoAveia ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoChoc ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoChoco ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoRosas ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoMaca ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoMara ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoLeite ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoSpa ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoAnti ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoVinho ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoBeterraba ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#sauna ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoDetox ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoRevi ul li::before {
+  content: "🦋 "; /* borboleta como marcador */
+}
+
+#banhoDeErvas .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 20px; /* distância do topo do menu */
+  right: 20px; /* distância da direita do menu */
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoKids .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 100px; /* tamanho do círculo */
+  height: 40px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 10px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 30px; /* distância do topo do menu */
+  right: 20px; /* distância da direita do menu */
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoGold .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 20px; /* distância do topo do menu */
+  right: 20px; /* distância da direita do menu */
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoRelax .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 20px; /* distância do topo do menu */
+  right: 20px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoAveia .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 20px; /* distância do topo do menu */
+  right: 20px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoChoc .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 38px; /* distância do topo do menu */
+  right: 13px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoChoco .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 38px; /* distância do topo do menu */
+  right: 13px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoRosas .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 20px; /* distância do topo do menu */
+  right: 20px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoMaca .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 45px; /* distância do topo do menu */
+  right: 10px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoMara .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 45px; /* distância do topo do menu */
+  right: 10px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoAnti .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 40px; /* distância do topo do menu */
+  right: 10px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoDetox .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 50px; /* distância do topo do menu */
+  right: 1px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoVinho .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 50px; /* distância do topo do menu */
+  right: 1px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoLeite .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 45px; /* distância do topo do menu */
+  right: 10px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoSpa .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 45px; /* distância do topo do menu */
+  right: 10px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoBeterraba .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 20px; /* distância do topo do menu */
+  right: 5px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#sauna .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 20px; /* distância do topo do menu */
+  right: 5px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoRevi .price {
+  background: #d75516;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px; /* aumenta um pouco para ficar redondo */
+  width: 150px; /* tamanho do círculo */
+  height: 80px; /* mesmo valor que width para círculo perfeito */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px; /* centraliza o texto verticalmente */
+  position: absolute; /* para posicionar no canto */
+  top: 20px; /* distância do topo do menu */
+  right: 5px; /* distância da direita do menu */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#banhoDeErvas p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoVinho p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoKids p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoRelax p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoGold p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoAveia p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoChoc p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoChoco p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoRosas p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoAnti p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoDetox p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoMaca p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoMara p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoBeterraba p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoSpa p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#sauna p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoLeite p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoRevi p {
+  margin-top: 20px;
+  font-family: "Georgia", serif;
+}
+
+#banhoDeErvas.active {
+  display: block;
+}
+
+#banhoVinho.active {
+  display: block;
+}
+
+#banhoChoc.active {
+  display: block;
+}
+
+#banhoGold.active {
+  display: block;
+}
+
+#banhoAveia.active {
+  display: block;
+}
+
+#banhoChoco.active {
+  display: block;
+}
+
+#banhoKids.active {
+  display: block;
+}
+
+#banhoRelax.active {
+  display: block;
+}
+
+#banhoRosas.active {
+  display: block;
+}
+
+#banhoAnti.active {
+  display: block;
+}
+
+#banhoDetox.active {
+  display: block;
+}
+
+#banhoLeite.active {
+  display: block;
+}
+
+#banhoMaca.active {
+  display: block;
+}
+
+#banhoMara.active {
+  display: block;
+}
+
+#banhoBeterraba.active {
+  display: block;
+}
+
+#banhoSpa.active {
+  display: block;
+}
+
+#sauna.active {
+  display: block;
+}
+
+#banhoRevi.active {
+  display: block;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+#overlay.active {
+  display: block;
+}
