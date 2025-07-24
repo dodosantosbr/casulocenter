@@ -147,7 +147,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/fundobg1.png");
+  background-image: url("/src/img/fundobg1.png");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -511,28 +511,30 @@ body {
 }
 
 .footer {
-  background-color: var(--verde-escuro); /* Ex: #1a3c34 */
-  color: #fff;
-  padding: 40px 20px;
-  font-size: 1rem;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f0ebe7;
+  color: #86989c;
+  padding: 2.5rem 1.5rem;
 }
 
-.footer p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #ccc;
-  letter-spacing: 0.5px;
+.footer-logo {
+  width: 98px;
+  height: auto;
+  object-fit: contain;
 }
 
-.footer a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
+.footer-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.footer a:hover {
-  text-decoration: underline;
+.footer-contact i {
+  color: #555;
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+  vertical-align: middle;
 }
